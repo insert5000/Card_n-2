@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  
+  <title>Frontend Mentor | Order summary card</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%);
+    background-color: hsl(225, 100%, 94%); 
+  background-color: hsl(245, 75%, 52%);
+background-color:hsl(225, 100%, 98%) ;
+background-color: hsl(224, 23%, 55%);
+background-color:hsl(223, 47%, 23%) ;}
+ 
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+      height: 100vh;
+      text-align: center;
+    }
+    .card{
+      flex-direction: column;
+      width: 400px;
+      height: 650px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 20px;
+      font-family: 'Red Hat Display';
+    }
+      .card img{
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .card .card-content{
+    }
+    .card-title{
+      color: hsl(223, 47%, 23%) ;
+      
+    }
+    .card-text{
+      color: hsl(224, 23%, 55%);
+      margin-left: 50px;
+      margin-right: 50px;
+
+    }
+    .card-price{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 10px;
+      height: 70px;
+      margin-left: 35px;
+      margin-right: 35px ;
+      background-color: hsl(225, 100%, 98%);
+      padding: 5px;
+      margin-bottom: 30px;
+    }
+    .card-price img{
+      height: 50px;
+      width: 50px;
+    }
+    .card-price .info{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .card-price .info .title{
+      color:  hsl(223, 47%, 23%);
+      font-weight:bold;
+      font-size: 15px;
+    }
+    .card-price .info .price{
+      margin-top: 5px;
+      font-size: 15px;
+      color: hsl(224, 23%, 55%);
+    }
+    .card-price .change{
+      color:  hsl(245, 75%, 52%);
+      font-weight:bolder;
+      font-size: 15px;
+    }
+    .card-price .change:hover{
+      cursor: pointer;
+    }
+    .button{
+      border-radius: 15px;
+      width: 81%;
+      height: 50px;
+      background-color: #766cf1;
+      color: white;
+      font-weight: bold;
+      border-width: 0;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .button:hover{
+      cursor: pointer;
+    }
+    .cancel{
+      color:hsl(223, 47%, 23%) ;
+    }
+    .cancel:hover{
+      cursor: pointer;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+        <img src="images/illustration-hero.svg"/>
+      
+
+      <div class="card-content">
+          <h1 class="card-title">
+            Order Summary
+          </h1>
+          <p class="card-text">
+            You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!
+          </p>
+          <div class="card-price">
+            <img src="images/icon-music.svg"/>
+            <div class="info">
+              <label class="title">Annual Plan</label>
+              <label class="price">$59.99/year</label>
+            </div>
+           <div>
+            <a class="change">Change</a>
+           </div>
+            
+          </div>
+          <button class="button"> Proceed to Payment</button>
+          <div class="cancel">Cancel Order</div>
+      </div>
+  </div>
+
+
+  
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
